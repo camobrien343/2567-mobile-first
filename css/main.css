@@ -2,44 +2,6 @@
 /* CSS Document */
 
 
-*, *:after, *:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-
-
-.wrapper {
-	margin: 0 auto;
-	width: 75%;
-}
-	
-.row:after {
-	clear: both;
-	content:"";
-	display: table;
-	
-}
-
-
-
-img {
-	max-width: 100%;
-}
-
-[class*='col-'] {
-	float: left;
-	padding-right: 20px;
-	margin-bottom: 20px;
-
-}
-
-[class*='col-']:last-of-type {
-	padding-right: 0;
-}
 
 
 /*--------------------------------------------------------------
@@ -77,16 +39,7 @@ img {
 
 /*-- 1.1 - Headings --*/
 
-html {
-	font-size: 18px;
-}
 
-
-body {
-	line-height: 2rem;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1rem;
-}
 
 
 
@@ -145,6 +98,17 @@ h2 {
 	margin: 50px 0 100px 0;
 }
 
+/*-- 1.2 - Body Copy --*/
+
+html {
+	font-size: 18px;
+}
+
+body {
+	line-height: 2rem;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+}
 
 .employee-name {
 	font-weight: 800;
@@ -153,7 +117,7 @@ h2 {
 
 
 
-
+/*-- 1.3 - Buttons --*/
 
 nav a {
 	color: #808285;
@@ -180,27 +144,7 @@ nav a:hover {
 	color: #FFF;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------- temp divs-------*/
-
-
-
-
+/*-- 1.5 - Lists --*/
 
 nav li {
 	display: inline;
@@ -214,10 +158,9 @@ nav li:last-child {
 
 
 
-header {
-	padding-top: 10px;
-}
-
+/*--------------------------------------------------------------
+4.0 - Media
+-------------------------------------------------------------- */
 
 #hero {
 	background: url(../img/hero.jpg);
@@ -229,32 +172,37 @@ header {
 	background-repeat: no-repeat;
 	margin-top: 10px;
 	margin-bottom: 30px;
-	
+}
+
+.sprites li:first-child a {
+	background-image: url(../img/icon-twitter.png);
+}
+
+.sprites li:nth-child(2) a {
+	background-image: url(../img/icon-facebook.png);
+}
+
+/*--------------------------------------------------------------
+3.0 - Content
+-------------------------------------------------------------- */
+
+/*-- 3.1 - Site Structure --*/
+
+header {
+	padding-top: 10px;
 }
 
 header .col-7-12 {
 	padding: 200px 0 100px 0;
 }
 
-
-
-
-
-
-
 #hero a:last-child {
 	margin-right: 0;
 }
 
-
-
-
-
 #work, #about .col-7-12 {
 	text-align: center;
 }
-
-
 
 .col-work {
 	background-color: #f9f7f5;
@@ -263,14 +211,11 @@ header .col-7-12 {
 	flex: 1;
 }
 
-
-
 .sprites ul {
 	list-style: none;
 	list-style-position: inside;
 	padding: 0;
 	display: inline-block;
-    
 }
 
 .sprites li {
@@ -283,20 +228,11 @@ header .col-7-12 {
 	margin-left: -30px;
 }
 
-
 .sprites li:first-child a, .sprites li:nth-child(2) a {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	height: 25px;
 	width: 25px;
-}
-
-.sprites li:first-child a {
-	background-image: url(../img/icon-twitter.png);
-}
-
-.sprites li:nth-child(2) a {
-	background-image: url(../img/icon-facebook.png);
 }
 
 .sprites li:first-child a:hover, .sprites li:nth-child(2) a:hover {
@@ -307,16 +243,52 @@ header .col-7-12 {
 	display: inline-block;
 }
 
-#about .row:nth-child(3) .col-1-2:first-child, #about .row:nth-child(5) .col-1-2:first-child {
-	float: right;
+
+ 
+ #about .row:nth-child(3) .col-1-2.horizontal-center,  #about .row:nth-child(5) .col-1-2.horizontal-center {
+	 text-align: right;
 }
 
-#about .row:nth-child(3) .col-1-2:last-child {
+
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+.wrapper {
+	margin: 0 auto;
+	width: 75%;
+}
+	
+.row:after {
+	clear: both;
+	content:"";
+	display: table;
+	
+}
+
+
+
+img {
+	max-width: 100%;
+}
+
+[class*='col-'] {
 	float: left;
-  }
+	padding-right: 20px;
+	margin-bottom: 20px;
 
+}
 
-
+[class*='col-']:last-of-type {
+	padding-right: 0;
+}
 
 footer {
 	background-color: #f8f7ca;
@@ -327,6 +299,27 @@ footer {
 footer p {
 	margin-top: 0;
 	text-align: right;
+}
+
+header ul {
+		display: inline-block;
+		margin-bottom: 0;
+		margin-top: 0;
+		
+	}
+	
+	#about .row:nth-child(3) .col-1-2:first-child, #about .row:nth-child(5) .col-1-2:first-child, .f-right {
+	float: right;
+}
+
+#about .row:nth-child(3) .col-1-2:last-child, .f-left {
+	float: left;
+ }
+
+
+footer .row {
+	margin-bottom: -80px;
+	padding-bottom: 0;
 }
 
 
@@ -342,24 +335,25 @@ footer p {
 
 .right-align {
 	text-align: right;
+	
+}
+
+.col-1-2.horizontal-center:nth-child(2) {
 	padding-right: 20px;
 }
 
-.f-right {
-	float: right;
+
+/*-------------------------------------REMOVE OR FIX DAMNIT--------------
+
+.flex {
+	display: flex;
+	flex-direction: row;
 }
 
-.f-left {
-	float: left;
+.same-height {
+	flex: 1 1 25%;
 }
-
-
-
-
-
-
-
-
+------------------------------------------*/
 
 
 .col-1-1 {
@@ -379,7 +373,7 @@ footer p {
 }
 
 .col-1-4 {
-	width: 25%;/*-- was 25% --*/
+	width: 25%;
 }
 
 .col-3-4 {
@@ -482,18 +476,6 @@ footer p {
 .col-7-12 {
 	width: 58.31%;
 }
-
-
-
-
-
-
-
-.red {
-	background-color: red;
-	height: 50px;
-}
-
 
 
 
@@ -626,7 +608,7 @@ footer p {
 /*-- 3.1 - Site Structure --*/
 
 	.wrapper {
-		width: 85%; /*-- was at 85%---*/
+		width: 85%; 
 	}
 	
 	.col-1-3, .col-1-4:nth-child(2), .col-1-5, .col-1-7, .col-1-4.col-sm, .col-1-6.col-sm, .col-1-8.col-sm, .col-1-9.col-sm, .col-1-10.col-sm, .col-1-11, .col-1-12.col-sm {
@@ -635,7 +617,6 @@ footer p {
 	
 	.col-1-2 {
 		margin-bottom: 10px;
-		
 	}
 	
 	div.horizontal-center.col-1-2 {
@@ -670,8 +651,6 @@ footer p {
 		padding: 0;
 	}
 	
-	
-	
 	ul.sprites {
 		margin: 10px 0;
 	}
@@ -681,46 +660,47 @@ footer p {
 		margin-top: 10px;
 		margin-bottom: 10px;
 		padding-bottom: 40px;
-	
 	}
 	
 	header .col-7-12 {
 		padding: 20px 0 30px 0;
 	}
-	
 
 	#about .row {
 		margin-bottom: 20px;
 	}
 	
+	.col-1-2.horizontal-center {
+	padding-left: 5px;
+	}
+	
 	#about .row:nth-child(3) .col-1-2:first-child, #about .row:nth-child(5) .col-1-2:first-child {
 	float: left;
-}
+	}
 
 #about .row:nth-child(3) .col-1-2:last-child, #about .row:nth-child(5) .col-1-2:last-child {
 	float: right;
+	}
+	
+	 #about .row:nth-child(3) .col-1-2.horizontal-center,  #about .row:nth-child(5) .col-1-2.horizontal-center {
+	 text-align: left;
 }
+
+	 footer .row {
+		  margin-bottom: -40px;
+		
+}
+	footer ul {
+		padding-left: 25px;
+}
+/*-----------------------------------------_THIS IS SO STUPID -----
+
+#about.col-7-12.block-center {
+	text-align: center;
+	margin: 0 auto;
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
+-----------------------------*/	
+	
+}
