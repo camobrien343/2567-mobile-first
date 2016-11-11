@@ -1,13 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
-
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-
 1.0 - Typography
 	1.1 - Headings
 	1.2 - Body Copy
@@ -16,89 +12,25 @@
 	1.5 - Lists
 	1.6 - Tables
 2.0 - Navigation Menus
-	2.1 - Main
-	2.2 - Sub
-	2.3 - Footer
+	2.1 - Main Menu
+	2.2 - Sprites
+	2.3 - Footer Menu
 3.0 - Content
 	3.1 - Site Structure
-	3.2 - Site Header
-	3.3 - Site Footer
+	3.2 - Single Columns
+	3.3 - Partial Columns
 4.0 - Media
 5.0 - Utility
-	5.1 - Text Sizes
-	5.2 - Colors
-	5.3 - Alignments
-
+	5.1 - Background Colors
+	5.2 - Text Colors
+	5.3 - Text Utilities
+	5.4 - Spacing
+	5.5 - Alignments
 --------------------------------------------------------------*/
 
-
-
 /*--------------------------------------------------------------
-1.0 - Typography
+1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
-
-/*-- 1.1 - Headings --*/
-
-
-
-
-
-
-
-
-h1 {
-	display: inline;
-	width: 70px;
-	height: 40px;
-}
-
-h3, h3+p  {
-	text-align: center;
-}
-
-h4, .employee-name {
-	color: #756854;
-}
-
-h4 {
-	font-size: 1.8rem;
-	font-weight: 600;
-	text-align: center;
-	padding: 70px 0 50px 0;
-}
-
-
-header p {
-	font-size: 4rem;
-	font-weight: 800;
-	color: #FFF; 
-}
-
-span {
-	color: #FFF;
-	display: inline-block;
-	font-weight: 300;
-	font-size: 1.2rem;
-}
-
-
-h2, h3, nav, a, h4, .employee-name {
-	text-transform: uppercase;
-}
-
-
-h2 {
-	color: #756854;
-	text-align: center;
-	font-size: 4rem;
-	font-weight: 300;
-	border-bottom: 1px solid #756854;
-	display: inline-block;
-	line-height: 4.5rem;
-	margin: 50px 0 100px 0;
-}
-
-/*-- 1.2 - Body Copy --*/
 
 html {
 	font-size: 18px;
@@ -110,25 +42,57 @@ body {
 	font-size: 1rem;
 }
 
+
+/*--------------------------------------------------------------
+1.1 - Headings
+-------------------------------------------------------------- */
+
+h1 {
+	display: inline;
+	width: 70px;
+	height: 40px;
+}
+
+h2 {
+	font-size: 4rem;
+	font-weight: 300;
+	border-bottom: 1px solid #756854;
+	display: inline-block;
+	line-height: 4.5rem;
+	margin: 50px 0 100px 0;
+}
+
+h4 {
+	font-size: 1.8rem;
+	font-weight: 600;
+	padding: 70px 0 50px 0;
+}
+
+/*--------------------------------------------------------------
+1.2 - Body Copy
+-------------------------------------------------------------- */
+
+header p {
+	font-size: 3.3rem;
+	font-weight: 800;
+	color: #FFF; 
+}
+
+span {
+	color: #FFF;
+	display: inline-block;
+	font-weight: 300;
+	font-size: 1.2rem;
+}
+
 .employee-name {
 	font-weight: 800;
 	font-size: 1.4rem;
 }
 
-
-
-/*-- 1.3 - Buttons --*/
-
-nav a {
-	color: #808285;
-	text-decoration: none
-}
-
-nav a:hover {
-	color: #e2b841;
-}
-
-
+/*--------------------------------------------------------------
+1.3 - Buttons
+-------------------------------------------------------------- */
 
 #hero a {
 	color: #333447;
@@ -144,7 +108,20 @@ nav a:hover {
 	color: #FFF;
 }
 
-/*-- 1.5 - Lists --*/
+/*--------------------------------------------------------------
+1.5 - Lists
+-------------------------------------------------------------- */
+
+
+
+/*--------------------------------------------------------------
+2.0 - Navigation Menus
+-------------------------------------------------------------- */
+
+
+/*--------------------------------------------------------------
+2.1 - Main Menu
+-------------------------------------------------------------- */
 
 nav li {
 	display: inline;
@@ -152,11 +129,40 @@ nav li {
 	font-size: 1rem;
 }
 
+header ul {
+		display: inline-block;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
 nav li:last-child {
 	margin-right: 0;
 }
 
+nav a {
+	color: #808285;
+	text-decoration: none
+}
 
+nav a:hover {
+	color: #e2b841;
+}
+
+/*--------------------------------------------------------------
+2.2 - Sprites
+-------------------------------------------------------------- */
+
+.sprites ul {
+	list-style: none;
+	list-style-position: inside;
+	padding: 0;
+	display: inline-block;
+}
+
+.sprites li {
+	padding-right: 7px;
+	display: inline;
+}
 
 /*--------------------------------------------------------------
 4.0 - Media
@@ -186,46 +192,14 @@ nav li:last-child {
 3.0 - Content
 -------------------------------------------------------------- */
 
-/*-- 3.1 - Site Structure --*/
-
-header {
-	padding-top: 10px;
-}
-
-header .col-7-12 {
-	padding: 200px 0 100px 0;
-}
-
-#hero a:last-child {
-	margin-right: 0;
-}
-
-#work, #about .col-7-12 {
-	text-align: center;
-}
+/*--------------------------------------------------------------
+3.1 - Site Structure 
+-------------------------------------------------------------- */
 
 .col-work {
 	background-color: #f9f7f5;
 	border: 1px solid #9ec4b1;
 	padding: 50px 5px 150px 5px;
-	flex: 1;
-}
-
-.sprites ul {
-	list-style: none;
-	list-style-position: inside;
-	padding: 0;
-	display: inline-block;
-}
-
-.sprites li {
-	padding-right: 7px;
-	display: inline;
-	
-}
-
-.col-1-2 li:first-child {
-	margin-left: -30px;
 }
 
 .sprites li:first-child a, .sprites li:nth-child(2) a {
@@ -243,14 +217,6 @@ header .col-7-12 {
 	display: inline-block;
 }
 
-
- 
- #about .row:nth-child(3) .col-1-2.horizontal-center,  #about .row:nth-child(5) .col-1-2.horizontal-center {
-	 text-align: right;
-}
-
-
-
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -258,8 +224,6 @@ header .col-7-12 {
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
-
 
 .wrapper {
 	margin: 0 auto;
@@ -270,10 +234,7 @@ header .col-7-12 {
 	clear: both;
 	content:"";
 	display: table;
-	
 }
-
-
 
 img {
 	max-width: 100%;
@@ -301,59 +262,14 @@ footer p {
 	text-align: right;
 }
 
-header ul {
-		display: inline-block;
-		margin-bottom: 0;
-		margin-top: 0;
-		
-	}
-	
-	#about .row:nth-child(3) .col-1-2:first-child, #about .row:nth-child(5) .col-1-2:first-child, .f-right {
-	float: right;
-}
-
-#about .row:nth-child(3) .col-1-2:last-child, .f-left {
-	float: left;
- }
-
-
 footer .row {
 	margin-bottom: -80px;
 	padding-bottom: 0;
 }
 
-
-
-.block-center {
-	float: none;
-	margin: 0 auto;
-}
-
-.horizontal-center {
-	padding: 200px 0;
-}
-
-.right-align {
-	text-align: right;
-	
-}
-
-.col-1-2.horizontal-center:nth-child(2) {
-	padding-right: 20px;
-}
-
-
-/*-------------------------------------REMOVE OR FIX DAMNIT--------------
-
-.flex {
-	display: flex;
-	flex-direction: row;
-}
-
-.same-height {
-	flex: 1 1 25%;
-}
-------------------------------------------*/
+/*--------------------------------------------------------------
+3.2 - SINGLE COLUMNS
+-------------------------------------------------------------- */
 
 
 .col-1-1 {
@@ -376,12 +292,45 @@ footer .row {
 	width: 25%;
 }
 
-.col-3-4 {
-	width: 75%;
-}
-
 .col-1-5 {
 	width: 20%;
+}
+
+.col-1-6 {
+	width: 16.66%;
+}
+
+.col-1-7 {
+	width: 14.28%;
+}
+
+.col-1-8 {
+	width: 12.5%;
+}
+
+.col-1-9 {
+	width: 11.11%;
+}
+
+.col-1-10 {
+	width: 10%;
+}
+
+.col-1-11 {
+	width: 9.09%;
+}
+
+.col-1-12 {
+	width: 8.33%;
+}
+
+
+/*--------------------------------------------------------------
+3.3 - PARTIAL COLUMNS
+-------------------------------------------------------------- */
+
+.col-3-4 {
+	width: 75%;
 }
 
 .col-2-5 {
@@ -392,20 +341,12 @@ footer .row {
 	width: 60%;
 }
 
-.col-1-6 {
-	width: 16.66%;
-}
-
 .col-2-6 {
 	width: 33.32%
 }
 
 .col-4-6 {
 	width: 66.64%;
-}
-
-.col-1-7 {
-	width: 14.28%;
 }
 
 .col-2-7 {
@@ -416,21 +357,12 @@ footer .row {
 	width: 71.4%;
 }
 
-.col-1-8 {
-	width: 12.5%;
-}
-
 .col-3-8 {
 	width: 37.5%;
 }
 
 .col-5-8 {
 	width: 62.5%;
-}
-
-
-.col-1-9 {
-	width: 11.11%;
 }
 
 .col-2-9 {
@@ -441,20 +373,12 @@ footer .row {
 	width: 77.77%;
 }
 
-.col-1-10 {
-	width: 10%;
-}
-
 .col-3-10 {
 	width: 30%;
 }
 
 .col-7-10 {
 	width: 70%;
-}
-
-.col-1-11 {
-	width: 9.09%;
 }
 
 .col-4-11 {
@@ -465,10 +389,6 @@ footer .row {
 	width: 63.63%;
 }
 
-.col-1-12 {
-	width: 8.33%;
-}
-
 .col-5-12 {
 	width: 41.65%;
 }
@@ -476,6 +396,89 @@ footer .row {
 .col-7-12 {
 	width: 58.31%;
 }
+
+/*--------------------------------------------------------------
+5.0 - Utility
+-------------------------------------------------------------- */
+
+/*--------------------------------------------------------------
+5.1 - Colors
+-------------------------------------------------------------- */
+
+
+
+
+
+/*--------------------------------------------------------------
+5.2 - Text Colors
+-------------------------------------------------------------- */
+
+.brown-type {
+	color: #756854;
+}
+
+
+/*--------------------------------------------------------------
+5.3 - Text Utilities
+-------------------------------------------------------------- */
+
+.right-align  #about .row:nth-child(3) .col-1-2.horizontal-center,  #about .row:nth-child(5) .col-1-2.horizontal-center {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+h2, h3, nav, a, h4, .employee-name {
+	text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------
+5.4 - Spacing
+-------------------------------------------------------------- */
+
+header {
+	padding-top: 10px;
+}
+
+header .col-7-12 {
+	padding: 200px 0 100px 0;
+}
+
+#hero a:last-child {
+	margin-right: 0;
+}
+
+.col-1-2 li:first-child {
+	margin-left: -30px;
+}
+
+.col-1-2.horizontal-center:nth-child(2) {
+	padding-right: 20px;
+}
+
+.horizontal-center {
+	padding: 200px 0;
+}
+
+/*--------------------------------------------------------------
+5.5 - Alignments
+-------------------------------------------------------------- */
+
+.block-center {
+	float: none;
+	margin: 0 auto;
+}
+
+#about .row:nth-child(3) .col-1-2:first-child, #about .row:nth-child(5) .col-1-2:first-child, .f-right {
+	float: right;
+}
+
+#about .row:nth-child(3) .col-1-2:last-child, .f-left {
+	float: left;
+ }
+
 
 
 
@@ -539,6 +542,7 @@ footer .row {
 	  font-weight: 300;
 	  border-bottom: 1px solid #756854;
 	  display: inline-block;
+	  text-align: center;
 	  line-height: 4.5rem;
 	  margin: 30px 0 20px 0;
 	}
@@ -693,14 +697,7 @@ footer .row {
 	footer ul {
 		padding-left: 25px;
 }
-/*-----------------------------------------_THIS IS SO STUPID -----
 
-#about.col-7-12.block-center {
-	text-align: center;
-	margin: 0 auto;
-	
-}
-	
------------------------------*/	
+
 	
 }
