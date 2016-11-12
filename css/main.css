@@ -197,9 +197,10 @@ nav a:hover {
 -------------------------------------------------------------- */
 
 .col-work {
-	background-color: #f9f7f5;
-	border: 1px solid #9ec4b1;
-	padding: 50px 5px 150px 5px;
+	
+	
+	
+	
 }
 
 .sprites li:first-child a, .sprites li:nth-child(2) a {
@@ -405,6 +406,34 @@ footer .row {
 5.1 - Colors
 -------------------------------------------------------------- */
 
+.paddingBlock {
+	padding: 20px 0;
+}
+
+.eqWrap {
+	display: flex;
+}
+
+
+.eq {
+	
+	background-color: #f9f7f5;
+	border: 1px solid #9ec4b1;
+	padding: 50px 5px 150px 5px;
+}
+
+
+.equalHW {
+	flex: 1;
+}
+
+.equalHMWrap {
+	justify-content: space-between;
+}
+
+.equalHM {
+	width: 23%;
+}
 
 
 
@@ -699,5 +728,21 @@ header .col-7-12 {
 }
 
 
+
+
+
+  .eqWrap{ flex-direction: column ;}
+  .equalHM{ width:auto; }
+
+
+.equalHM {
+	width: 43%;
+}
+
+
+
+
 	
 }
+
+
