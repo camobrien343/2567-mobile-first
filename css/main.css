@@ -411,7 +411,15 @@ footer .row {
 }
 
 .eqWrap {
+	display: -o-flex;
+    display: -moz-flex;
+	display: -webkit-flex;
+    display: -ms-flexbox;
 	display: flex;
+	
+	-webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 
@@ -516,9 +524,7 @@ header .col-7-12 {
 		width: 95%;
 	}
 	
-	.col-7-12 {
-		width: 75%;
-	}
+	
 	
 	.horizontal-center {
 		padding: 100px 10px;
@@ -731,14 +737,20 @@ header .col-7-12 {
 
 
 
-  .eqWrap{ flex-direction: column ;}
-  .equalHM{ width:auto; }
+
+  
 
 
-.equalHM {
-	width: 43%;
-}
 
+
+
+
+    .equalHM.col-1-4 {
+     width: 46.5%;
+	 padding: 30px 7px;
+	
+  }
+  
 
 
 
