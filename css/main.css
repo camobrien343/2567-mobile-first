@@ -26,6 +26,7 @@
 	5.3 - Text Utilities
 	5.4 - Spacing
 	5.5 - Alignments
+	5.6 - Flex
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -196,13 +197,6 @@ nav a:hover {
 3.1 - Site Structure 
 -------------------------------------------------------------- */
 
-.col-work {
-	
-	
-	
-	
-}
-
 .sprites li:first-child a, .sprites li:nth-child(2) a {
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -325,7 +319,6 @@ footer .row {
 	width: 8.33%;
 }
 
-
 /*--------------------------------------------------------------
 3.3 - PARTIAL COLUMNS
 -------------------------------------------------------------- */
@@ -403,57 +396,12 @@ footer .row {
 -------------------------------------------------------------- */
 
 /*--------------------------------------------------------------
-5.1 - Colors
--------------------------------------------------------------- */
-
-.paddingBlock {
-	padding: 20px 0;
-}
-
-.eqWrap {
-	display: -o-flex;
-    display: -moz-flex;
-	display: -webkit-flex;
-    display: -ms-flexbox;
-	display: flex;
-	
-	-webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-
-.eq {
-	
-	background-color: #f9f7f5;
-	border: 1px solid #9ec4b1;
-	padding: 50px 5px 150px 5px;
-}
-
-
-.equalHW {
-	flex: 1;
-}
-
-.equalHMWrap {
-	justify-content: space-between;
-}
-
-.equalHM {
-	width: 23%;
-}
-
-
-
-
-/*--------------------------------------------------------------
 5.2 - Text Colors
 -------------------------------------------------------------- */
 
 .brown-type {
 	color: #756854;
 }
-
 
 /*--------------------------------------------------------------
 5.3 - Text Utilities
@@ -516,31 +464,53 @@ header .col-7-12 {
 	float: left;
  }
 
+/*--------------------------------------------------------------
+5.6 Flex
+-------------------------------------------------------------- */
 
+.paddingBlock {
+	padding: 20px 0;
+}
 
-
-@media (max-width: 1024px) {
-	.wrapper {
-		width: 95%;
-	}
-	
-	
-	
-	.horizontal-center {
-		padding: 100px 10px;
-	}
-
+.eqWrap {
+	display: -o-flex;
+    display: -moz-flex;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+	display: flex;
+	-moz-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+     -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
 }
 
 
+.eq {
+	
+	background-color: #f9f7f5;
+	border: 1px solid #9ec4b1;
+	padding: 50px 5px 150px 5px;
+}
 
+
+.equalHW {
+	flex: 1;
+}
+
+.equalHMWrap {
+	justify-content: space-between;
+}
+
+.equalHM {
+	width: 23%;
+}
 
 @media (max-width: 480px) {
 	
-	/*--------------------------------------------------------------
+/*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-
 1.0 - Typography
 	1.1 - Headings
 	1.2 - Body Copy
@@ -549,28 +519,35 @@ header .col-7-12 {
 	1.5 - Lists
 	1.6 - Tables
 2.0 - Navigation Menus
-	2.1 - Main
-	2.2 - Sub
-	2.3 - Footer
+	2.1 - Main Menu
+	2.2 - Sprites
+	2.3 - Footer Menu
 3.0 - Content
 	3.1 - Site Structure
-	3.2 - Site Header
-	3.3 - Site Footer
+	3.2 - Single Columns
+	3.3 - Partial Columns
 4.0 - Media
 5.0 - Utility
-	5.1 - Text Sizes
-	5.2 - Colors
-	5.3 - Alignments
-
+	5.1 - Background Colors
+	5.2 - Text Colors
+	5.3 - Text Utilities
+	5.4 - Spacing
+	5.5 - Alignments
+	5.6 - Flex
 --------------------------------------------------------------*/
-
-
-
 /*--------------------------------------------------------------
 1.0 - Typography
 -------------------------------------------------------------- */
+		
+	body {
+		font-family: 'Open Sans', sans-serif;
+		font-size: .8rem;
+		line-height: 1.3rem;
+	}	
 
-/*-- 1.1 - Headings --*/
+/*--------------------------------------------------------------
+1.1 - Headings
+-------------------------------------------------------------- */
 
 	h2 {
 	  font-size: 2.1rem;
@@ -587,7 +564,9 @@ header .col-7-12 {
 	  padding: 70px 0 50px 0;
 	}
 
-/*-- 1.2 - Body Copy --*/
+/*--------------------------------------------------------------
+1.2 - Body Copy
+-------------------------------------------------------------- */
 
 	header p {
 		font-size: 2rem;
@@ -601,19 +580,15 @@ header .col-7-12 {
 		font-size: 1rem;
 		text-align: center;
 	}
-		
-	body {
-		font-family: 'Open Sans', sans-serif;
-		font-size: .8rem;
-		line-height: 1.3rem;
-	}	
 	
 	.employee-name {
 		margin: 0;
 		font-size: 1.1rem;
 	}
 	
-/*-- 1.3 - Buttons --*/	
+/*--------------------------------------------------------------
+1.3 - Buttons
+-------------------------------------------------------------- */
 
 	#hero a {
 		color: #333447;
@@ -649,19 +624,10 @@ header .col-7-12 {
 	.wrapper {
 		width: 85%; 
 	}
-	
-	.col-1-3, .col-1-4:nth-child(2), .col-1-5, .col-1-7, .col-1-4.col-sm, .col-1-6.col-sm, .col-1-8.col-sm, .col-1-9.col-sm, .col-1-10.col-sm, .col-1-11, .col-1-12.col-sm {
-		padding-right: 0;
-	}
-	
-	.col-1-2 {
-		margin-bottom: 10px;
-	}
-	
-	div.horizontal-center.col-1-2 {
-		padding-left: 10px;
-	}
 
+/*--------------------------------------------------------------
+3.2 - Single Columns
+-------------------------------------------------------------- */
 	.col-1-4, .col-1-6, .col-1-8 {
 		width: 50%;
 	}
@@ -682,25 +648,45 @@ header .col-7-12 {
 		width: 25%;
 	}
 	
+/*--------------------------------------------------------------
+3.3 - Partial Columns
+-------------------------------------------------------------- */
+
 	.col-7-12 {
 		width: 100%;
 	}
 	
-	.horizontal-center {
-		padding: 0;
+/*--------------------------------------------------------------
+5.3 - Text Utilities
+-------------------------------------------------------------- */
+
+ #about .row:nth-child(3) .col-1-2.horizontal-center,  #about .row:nth-child(5) .col-1-2.horizontal-center {
+	 text-align: left;
+}
+
+/*--------------------------------------------------------------
+5.4 - Spacing
+-------------------------------------------------------------- */
+	
+	.col-1-3, .col-1-4:nth-child(2), .col-1-5, .col-1-7, .col-1-4.col-sm, .col-1-6.col-sm, .col-1-8.col-sm, .col-1-9.col-sm, .col-1-10.col-sm, .col-1-11, .col-1-12.col-sm {
+		padding-right: 0;
 	}
 	
-	ul.sprites {
-		margin: 10px 0;
+	.col-1-2 {
+		margin-bottom: 10px;
 	}
 	
-	
+	div.horizontal-center.col-1-2 {
+		padding-left: 10px;
+	}
+
+
 	#hero {
 		margin-top: 10px;
 		margin-bottom: 10px;
 		padding-bottom: 40px;
 	}
-	
+
 	header .col-7-12 {
 		padding: 20px 0 30px 0;
 	}
@@ -710,10 +696,21 @@ header .col-7-12 {
 	}
 	
 	.col-1-2.horizontal-center {
-	padding-left: 5px;
+		padding-left: 5px;
+	}
+
+	.horizontal-center {
+		padding: 0;
 	}
 	
-	#about .row:nth-child(3) .col-1-2:first-child, #about .row:nth-child(5) .col-1-2:first-child {
+	ul.sprites {
+		margin: 10px 0;
+	}
+/*--------------------------------------------------------------
+5.5 - Alignments
+-------------------------------------------------------------- */
+  
+  #about .row:nth-child(3) .col-1-2:first-child, #about .row:nth-child(5) .col-1-2:first-child {
 	float: left;
 	}
 
@@ -721,11 +718,11 @@ header .col-7-12 {
 	float: right;
 	}
 	
-	 #about .row:nth-child(3) .col-1-2.horizontal-center,  #about .row:nth-child(5) .col-1-2.horizontal-center {
-	 text-align: left;
-}
+/*--------------------------------------------------------------
+5.4 - Spacing
+-------------------------------------------------------------- */
 
-	 footer .row {
+	footer .row {
 		  margin-bottom: -40px;
 		
 }
@@ -733,27 +730,15 @@ header .col-7-12 {
 		padding-left: 25px;
 }
 
-
-
-
-
-
-  
-
-
-
-
-
+/*--------------------------------------------------------------
+5.6 - Flex
+-------------------------------------------------------------- */
 
     .equalHM.col-1-4 {
      width: 46.5%;
 	 padding: 30px 7px;
 	
   }
-  
-
-
-
 	
 }
 
