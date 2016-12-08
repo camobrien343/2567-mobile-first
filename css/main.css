@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+/*--- STUFF ---/
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -73,13 +76,13 @@ h4 {
 1.2 - Body Copy
 -------------------------------------------------------------- */
 
-header p {
+#hero p {
 	font-size: 3.3rem;
 	font-weight: 800;
 	color: #FFF; 
 }
 
-span {
+#hero span p {
 	color: #FFF;
 	display: inline-block;
 	font-weight: 300;
@@ -91,6 +94,11 @@ span {
 	font-size: 1.4rem;
 }
 
+
+h2, h3, nav, a, h4, .employee-name {
+	text-transform: uppercase;
+}
+
 /*--------------------------------------------------------------
 1.3 - Buttons
 -------------------------------------------------------------- */
@@ -99,8 +107,9 @@ span {
 	color: #333447;
 	display: inline-block;
 	background-color: #f8f7ca;
-	margin: 30px 50px 0 0;
-	padding: 10px 60px;
+	font-size: .85rem;
+	margin-right: 250px;
+	padding: 8px 40px;
 	text-decoration: none;
 }
 
@@ -127,7 +136,7 @@ span {
 nav li {
 	display: inline;
 	margin-right: 50px;
-	font-size: 1rem;
+	font-size: .85rem;
 }
 
 header ul {
@@ -247,7 +256,7 @@ img {
 }
 
 footer {
-	background-color: #f8f7ca;
+	background-color: #756854;
 	height: 200px;
 	padding-top: 30px;
 }
@@ -265,7 +274,6 @@ footer .row {
 /*--------------------------------------------------------------
 3.2 - SINGLE COLUMNS
 -------------------------------------------------------------- */
-
 
 .col-1-1 {
 	width: 100%;
@@ -403,25 +411,60 @@ footer .row {
 	color: #756854;
 }
 
+#about {
+	background-color: #F8F7CA;
+}
+
 /*--------------------------------------------------------------
 5.3 - Text Utilities
 -------------------------------------------------------------- */
-
-.right-align  #about .row:nth-child(3) .col-1-2.horizontal-center,  #about .row:nth-child(5) .col-1-2.horizontal-center {
-	text-align: right;
-}
 
 .text-center {
 	text-align: center;
 }
 
-h2, h3, nav, a, h4, .employee-name {
-	text-transform: uppercase;
-}
-
 /*--------------------------------------------------------------
 5.4 - Spacing
 -------------------------------------------------------------- */
+
+/*--------------------------------------------------------------
+5.4 - SPACING
+-------------------------------------------------------------- */
+.p-t-sm {
+	padding-top: 10px;
+}
+.p-t-md {
+	padding-top: 20px;
+}
+.p-t-lg {
+	padding-top: 50px;
+}
+
+.p-b-md {
+	padding-bottom: 20px;
+}
+
+.p-b-lg {
+	padding-bottom: 50px;
+}
+.p-b-xl {
+	padding-bottom: 100px;
+}
+.m-t-0 {
+	margin-top: 0;
+}
+.m-t-md {
+	margin-top: 20px;
+}
+
+.m-b-md {
+	margin-bottom: 25px;
+}
+
+.m-b-lg {
+	margin-bottom: 50px;
+}
+
 
 header {
 	padding-top: 10px;
@@ -443,9 +486,105 @@ header .col-7-12 {
 	padding-right: 20px;
 }
 
-.horizontal-center {
-	padding: 200px 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flex-about {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	-moz-flex-direction: row;
+    -o-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
 }
+
+
+.horizontal-center {
+	display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+}
+
+#about .row:nth-of-type(3), #about .row:nth-of-type(5) {
+	flex-direction: row-reverse;
+}
+
+.about-txt-right {
+	text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 5.5 - Alignments
@@ -456,21 +595,14 @@ header .col-7-12 {
 	margin: 0 auto;
 }
 
-#about .row:nth-child(3) .col-1-2:first-child, #about .row:nth-child(5) .col-1-2:first-child, .f-right {
+.f-right {
 	float: right;
 }
 
-#about .row:nth-child(3) .col-1-2:last-child, .f-left {
-	float: left;
- }
 
 /*--------------------------------------------------------------
 5.6 Flex
 -------------------------------------------------------------- */
-
-.paddingBlock {
-	padding: 20px 0;
-}
 
 .eqWrap {
 	display: -o-flex;
@@ -486,55 +618,33 @@ header .col-7-12 {
 }
 
 
-.eq {
-	
+.work-sub-section {
 	background-color: #f9f7f5;
 	border: 1px solid #9ec4b1;
-	padding: 50px 5px 150px 5px;
+	padding: 50px 5px;
 }
 
 
-.equalHW {
-	flex: 1;
-}
 
-.equalHMWrap {
-	justify-content: space-between;
-}
 
-.equalHM {
-	width: 23%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 480px) {
 	
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-1.0 - Typography
-	1.1 - Headings
-	1.2 - Body Copy
-	1.3 - Buttons
-	1.4 - Forms
-	1.5 - Lists
-	1.6 - Tables
-2.0 - Navigation Menus
-	2.1 - Main Menu
-	2.2 - Sprites
-	2.3 - Footer Menu
-3.0 - Content
-	3.1 - Site Structure
-	3.2 - Single Columns
-	3.3 - Partial Columns
-4.0 - Media
-5.0 - Utility
-	5.1 - Background Colors
-	5.2 - Text Colors
-	5.3 - Text Utilities
-	5.4 - Spacing
-	5.5 - Alignments
-	5.6 - Flex
---------------------------------------------------------------*/
 /*--------------------------------------------------------------
 1.0 - Typography
 -------------------------------------------------------------- */
@@ -575,7 +685,7 @@ header .col-7-12 {
 		text-align: center;
 	}
 	
-		span {
+		span p {
 		font-weight: 100;
 		font-size: 1rem;
 		text-align: center;
@@ -594,7 +704,7 @@ header .col-7-12 {
 		color: #333447;
 		display: inline-block;
 		background-color: #f8f7ca;
-		margin: 30px 60px 0 0;
+		margin-right: 80px;
 		padding: 10px 30px;
 		text-decoration: none;
 	}
@@ -605,10 +715,15 @@ header .col-7-12 {
 
 /*-- 2.1 - Main --*/
 
+	nav {
+		
+	}
+
 	nav li {
 		display: inline;
 		margin-right: 11px;
 		font-size: .8rem;
+		text-align: right;
 	}	
 	
 	nav ul {
@@ -734,11 +849,19 @@ header .col-7-12 {
 5.6 - Flex
 -------------------------------------------------------------- */
 
-    .equalHM.col-1-4 {
-     width: 46.5%;
-	 padding: 30px 7px;
-	
-  }
+  .equalHM.col-1-4 {
+   width: 46.5%;
+   padding: 30px 7px;
+  
+}
+  
+  #about .row:nth-of-type(3), #about .row:nth-of-type(5) {
+	flex-direction: row;
+}
+
+.about-txt-right {
+	text-align: left;
+}
 	
 }
 
