@@ -10,13 +10,9 @@
 </head>
 
 <body>
-<!-- COMMENT-->
-<!-- COMMENT-->
-<!-- COMMENT-->
-<!-- COMMENT-->
 <header>
 	<div class="wrapper">
-        <div class="row">
+        <div class="row"><!-- Top Navigation -->
             <h1><a href="#"><img src="img/icon-logo.png" alt="Company Name"></a></h1>
             <nav class="f-right">
                 <ul>
@@ -27,12 +23,12 @@
             </nav>
         </div>
     </div>
-    <div id="hero">
+    <div id="hero"><!-- Hero Section -->
     	<div class="wrapper">
         	<div class="row">
                 <div class="col-7-12">
                   <p>We Design Things</p>
-                  <span><p>Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu. Aliquid delenit an pri, ad mea nostrud nominavi menandri.</p></span>
+                  <p>Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu. Aliquid delenit an pri, ad mea nostrud nominavi menandri.</p>
                   <a href="#about">Hire Us</a>
                   <a href="#work">View Work</a>
                 </div>
@@ -42,120 +38,135 @@
 </header>
 
 <!-- Work Section -->
-<div class="wrapper">
-  <section id="work" class="text-center">
+  <section id="work" class="wrapper text-center p-b-xl">
+  	<header>
       <h2 class="brown-type">Work</h2>
-      
-      	<div class="row">
-        	<section class="col-1-4">
-      			<div class="work-sub-section">
-                    <img src="img/icon-work-print.png" alt="">
-                    <h3>Print Design</h3>
-                    <p>Nam purto solet eu, vero mediocrem hendrerit ad ius.</p>
-         		</div>
-         	</section>
-            <section class="col-1-4">
+    </header> 
+    <div class="row">
+    
+            <section class="col-1-4"><!-- Print Design Sub Section -->
+            	<div class="work-sub-section">
+            			<figure>
+            				<img src="img/icon-work-print.png" alt="">
+                        </figure>
+           				<header>
+            				<h3>Print Design</h3>
+            			</header>
+            			<p>Nam purto solet eu, vero mediocrem hendrerit ad ius.</p>
+            	</div>
+            </section>
+            
+            <section class="col-1-4"><!-- Interactive Sub Section -->
                 <div class="work-sub-section">
-                        <img src="img/icon-work-interactive.png" alt="">
+                		<figure>
+                        	<img src="img/icon-work-interactive.png" alt="">
+                        </figure>
                         <header>
                         	<h3>Interactive</h3>
                         </header>
                         <p>Vix ad posse impetus, vis id quem nobis suscipiantur. His an assum omnium periculis.</p>
                 </div>
         	</section>
-            <section class="col-1-4">
+            
+            <section class="col-1-4"><!-- App Design Sub Section -->
                 <div class="work-sub-section">
-                        <img src="img/icon-work-app.png" alt="">
+                		<figure>
+                        	<img src="img/icon-work-app.png" alt="">
+                        </figure>
                         <header>
                         	<h3>App Design</h3>
                         </header>
                         <p>Exerci antiopam constituam per ex, pro odio enim te, ut eam quidam docendi ancillae. Id nisl appareat mel.</p>
                 </div>
          	</section>
-            <section class="col-1-4">
-        	<div class="work-sub-section">
-            		<img src="img/icon-work-branding.png" alt="">
-                    <header>
-            			<h3>Branding</h3>
-                    </header>
-            		<p>Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu.</p>
-         	</div>
+            
+            <section class="col-1-4"><!-- Branding Sub Section -->
+                <div class="work-sub-section">
+                        <figure>
+                            <img src="img/icon-work-branding.png" alt="">
+                        </figure>
+                        <header>
+                            <h3>Branding</h3>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu.</p>
+                </div>
          	</section>
+            
         </div>
     </section>
-</div>
+
     
-<section id="about" class="p-b-lg">
+<section id="about" class="p-b-xl"><!-- About Section -->
 	<div class="wrapper">
-   
-     <div class="col-7-12 text-center block-center">
-     <header>
-     	<h2 class="text-center brown-type">About</h2>
-     	<p>Ea expetenda prodesset cum, tibique principes laboramus id pro. Ei dolorem facilis volutpat sed, eu pro dicta iracundia scripserit. Vel singulis posidonium ea, primis possim voluptatum ei has. Ut usu sale modus liberavisse. Eos reque mnesarchum ea, ea tamquam disputando has.</p>
-     </header>
-     </div>
-     <h4 class="text-center brown-type">Our Team</h4>
-     <div class="row flex-about">
-      <div class="col-1-2">
-          <img src="img/about-john.jpg" alt="John Doe">
-      </div>
-      <div class="horizontal-center col-1-2">
-        <p class="brown-type employee-name">John Doe</p>
-        <ul class="sprites">
-          <li><a href="http://www.twitter.com" target="_blank"></a></li>
-          <li><a href="http://www.facebook.com" target="_blank"></a></li>
-        </ul>
-        <p>Nam purto solet eu, vero mediocrem hendrerit ad ius.</p>
-      </div>
-    </div>
+      <header class="col-7-12 text-center block-center"><!-- Introductory Content -->
+      	<h2 class="text-center brown-type">About</h2>
+      	<p>Ea expetenda prodesset cum, tibique principes laboramus id pro. Ei dolorem facilis volutpat sed, eu pro dicta iracundia scripserit. Vel singulis posidonium ea, primis possim voluptatum ei has. Ut usu sale modus liberavisse. Eos reque mnesarchum ea, ea tamquam disputando has.</p>
+      	<h4 class="text-center brown-type">Our Team</h4>
+      </header>
+     
+      
+      <section class="row flex-about"><!-- John Doe Sub Section -->
+      	<div class="col-1-2">
+      		<img src="img/about-john.jpg" alt="John Doe">
+      	</div>
+      	<div class="horizontal-center col-1-2">
+        	<header>
+      			<h5 class="brown-type">John Doe</h5>
+            </header>
+      		<ul class="sprites">
+      			<li><a href="http://www.twitter.com" target="_blank"></a></li>
+      			<li><a href="http://www.facebook.com" target="_blank"></a></li>
+      		</ul>
+      		<p>Nam purto solet eu, vero mediocrem hendrerit ad ius.</p>
+      	</div>
+      </section>
     
-    <div class="row flex-about">
-      <div class="col-1-2">
-          <img src="img/about-jane.jpg" alt="Jane Doe">
-      </div>
-      <div class="col-1-2 horizontal-center about-txt-right">
-        <p class="brown-type employee-name">Jane Doe</p>
-        <ul class="sprites">
-          <li><a href="http://www.twitter.com" target="_blank"></a></li>
-          <li><a href="http://www.facebook.com" target="_blank"></a></li>
-        </ul>
-        <p>Vix ad posse impetus, vis id quem nobis suscipiantur. His an assum omnium periculis.</p>
-      </div>
-    </div>
+      <section class="row flex-about"><!-- Jane Doe Sub Section -->
+      	<div class="col-1-2">
+      		<img src="img/about-jane.jpg" alt="Jane Doe">
+      	</div>
+      	<div class="col-1-2 horizontal-center about-txt-right">
+      		<h5 class="brown-type">Jane Doe</h5>
+      		<ul class="sprites">
+      			<li><a href="http://www.twitter.com" target="_blank"></a></li>
+      			<li><a href="http://www.facebook.com" target="_blank"></a></li>
+      		</ul>
+      		<p>Vix ad posse impetus, vis id quem nobis suscipiantur. His an assum omnium periculis.</p>
+      	</div>
+      </section>
     
-    <div class="row flex-about">
-      <div class="col-1-2">
-          <img src="img/about-mary.jpg" alt="Mary Smith">
-      </div>
-      <div class="col-1-2 horizontal-center">
-        <p class="brown-type employee-name">Mary Smith</p>
-        <ul class="sprites">
-          <li><a href="http://www.twitter.com" target="_blank"></a></li>
-          <li><a href="http://www.facebook.com" target="_blank"></a></li>
-        </ul>
-        <p>Exerci antiopam constituam per ex, pro odio enim te, ut eam quidam docendi ancillae. Id nisl appareat mel.</p>
-       </div>
-    </div>
+      <section class="row flex-about"><!-- Mary Smith Sub Section -->
+      	<div class="col-1-2">
+      		<img src="img/about-mary.jpg" alt="Mary Smith">
+      	</div>
+      	<div class="col-1-2 horizontal-center">
+      		<h5 class="brown-type">Mary Smith</h5>
+      		<ul class="sprites">
+      			<li><a href="http://www.twitter.com" target="_blank"></a></li>
+      			<li><a href="http://www.facebook.com" target="_blank"></a></li>
+      		</ul>
+      		<p>Exerci antiopam constituam per ex, pro odio enim te, ut eam quidam docendi ancillae. Id nisl appareat mel.</p>
+      	</div>
+      </section>
     
-    <div class="row flex-about" id="o">
-      <div class="col-1-2">
-          <img src="img/about-jon.jpg" alt="Jon Smith">
-      </div>
-      <div class="col-1-2 horizontal-center about-txt-right">
-        <p class="brown-type employee-name">Jon Smith</p>
-        <ul class="sprites">
-          <li><a href="http://www.twitter.com" target="_blank"></a></li>
-          <li><a href="http://www.facebook.com" target="_blank"></a></li>
-        </ul>
-        <p>Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu.</p>
-      </div>
+      <section class="row flex-about"><!-- Jon Smith Sub Section -->
+      	<div class="col-1-2">
+      		<img src="img/about-jon.jpg" alt="Jon Smith">
+      	</div>
+      	<div class="col-1-2 horizontal-center about-txt-right">
+      		<h5 class="brown-type">Jon Smith</h5>
+      		<ul class="sprites">
+      			<li><a href="http://www.twitter.com" target="_blank"></a></li>
+      			<li><a href="http://www.facebook.com" target="_blank"></a></li>
+      		</ul>
+      		<p>Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu.</p>
+      	</div>
+      </section>
+      
     </div>
-  </div>
 </section>
     
- <!---- Closing Wrapper --->
-
-<footer>
+<footer><!-- Site Footer Section -->
 	<div class="wrapper">
     	<div class="row">
         	<div class="col-1-10">
@@ -166,7 +177,7 @@
             </div>
         </div>
     	<div class="col-1-2">    
-              <nav>
+              <nav><!-- Footer Navigation -->
                   <ul>
                       <li><a href="#">Home</a></li>
                       <li><a href="#work">Work</a></li>
